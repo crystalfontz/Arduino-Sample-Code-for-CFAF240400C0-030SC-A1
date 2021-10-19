@@ -1,0 +1,9 @@
+Edit in photoshop:
+  save as 24-bit BMP "clouds480x128.bmp"
+
+Run "Go.bat". This will read in "clouds480x128.bmp" and
+  write our "CLOUDS.RAW"
+
+Copy CLOUDS.RAW to uSD card
+
+(This could also be done with EVE Asset Builder)

@@ -1,0 +1,41 @@
+Edit the logo of your dreams in photoshop
+  save layered PSD
+  hide white background
+  image, mode, indexed, 4 color + transparency
+  save as PNG
+  exit, don't overwrite layered PSD
+
+================================================================================
+To make transparent ARGB2 using EVE Asset Builder for FLASH
+  launch EVE Asset Builder https://brtchip.com/eve-toolchains/#EVEAssetBuilder
+  image converter
+  select indexed, 4 color + transparency PNG as input file
+  select output path ( + "Asset_Builder_Output")
+  select FT81X
+  Output Format ARGB2
+  Check compressed
+  click "Convert"
+  (done with EVE Asset Builder)
+  execute go_ARGB2.bat
+  
+  At this point the skeleton C structure is in:
+    .\Asset_Builder_Output\CFAM240400xx_030T_Splash_ARGB2.cpp
+  The batch file will open this up in notepad
+  
+  
+Use notepad to copy the size into the H file of your Arduino project.
+Use notepad to copy the data array into the C file of your Arduino project.
+================================================================================
+To make transparent PNG for FLASH:
+  Open indexed, 4 color + transparency PNG in photoshop.
+  image, mode, RGB Color
+  Save as .\PNG_Output\CFAM240400xx_030_Logo_Rotate_24bit_Transparent.png
+  execute go_PNG.bat
+
+  At this point the skeleton C structure is in:
+    .\PNG_Output\CFAM240400xx_030T_Splash_PNG.cpp
+  The batch file will open this up in notepad
+
+Use notepad to copy the size into the H file of your Arduino project.
+Use notepad to copy the data array into the C file of your Arduino project.
+================================================================================
